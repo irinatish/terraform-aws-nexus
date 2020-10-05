@@ -6,7 +6,11 @@
 #   is_enabled          = true
 #   enable_key_rotation = true
 # }
-
+provider "aws" {
+  region     = "us-west-2"
+  access_key = "my-access-key"
+  secret_key = "my-secret-key"
+}
 #------------------------------------------------------------------------------
 # AWS Cloudwatch Logs
 #------------------------------------------------------------------------------
